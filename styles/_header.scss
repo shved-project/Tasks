@@ -1,0 +1,46 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 15px;
+
+	&__logo-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__title {
+		font-family: "Rounded medium";
+		font-size: 25px;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__button {
+		padding: 5px 10px;
+		color: #fff;
+		border-radius: 8px;
+		transition-property: box-shadow, transform;
+		transition-duration: 0.2s;
+
+		@include hover {
+			box-shadow: 0 5px 1px #525252;
+			transform: translateY(-5px);
+		}
+	}
+	&__add-task {
+		background-color: #6dafff;
+	}
+	&__task-story {
+		background-color: #ffd16f;
+	}
+	&__delete-task {
+		background-color: #ff7878;
+	}
+	&__complete-task {
+		background-color: #78ff7a;
+	}
+}

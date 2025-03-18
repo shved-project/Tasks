@@ -1,0 +1,39 @@
+.story {
+	&__wrapper-tasks {
+		background-color: #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+
+		&:first-child {
+			margin-block: 30px;
+		}
+
+		&:first-child .story__list-item::after {
+			background-color: #50ff29;
+		}
+		&:last-child .story__list-item::after {
+			background-color: #ff2929;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-family: Rounded medium;
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+
+	&__list-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+		}
+	}
+}

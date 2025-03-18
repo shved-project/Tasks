@@ -1,0 +1,82 @@
+.task {
+	margin-top: 80px;
+	width: 900px;
+	margin-inline: auto;
+
+	&__title {
+		font-family: "Rounded medium";
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	&__wrapper {
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 8px;
+	}
+
+	&__cart {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		border-bottom: 1px solid #000;
+		padding-block: 10px;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	&__name {
+		cursor: pointer;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		aspect-ratio: 1 / 1;
+		width: 30px;
+	}
+
+	&__empty {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	&__load {
+		position: relative;
+		margin-inline: auto;
+		aspect-ratio: 1 / 1;
+		width: 80px;
+
+		@keyframes test {
+			from {
+				width: 10%;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+		&-elem {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			aspect-ratio: 1 / 1;
+			background-color: #00000056;
+			border-radius: 50%;
+
+			&:first-child {
+				animation: test 0.9s infinite alternate cubic-bezier(0.25, 0.1, 0.25, 1);
+			}
+			&:last-child {
+				animation: test 0.9s infinite alternate-reverse cubic-bezier(0.25, 0.1, 0.25, 1);
+			}
+		}
+	}
+}

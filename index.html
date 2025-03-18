@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Мои задачи</title>
+		<link rel="stylesheet" href="./styles/css/style.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a href="/" class="header__logo-wrapper">
+				<h1 class="header__title">Мои задачи</h1>
+				<img class="header__logo" src="./icons/logo.svg" alt="logo" width="40" />
+			</a>
+			<div class="header__buttons">
+				<button class="header__button header__add-task" type="button">Добавить задачу</button>
+				<button class="header__button header__task-story" type="button">Посмотреть историю задач</button>
+				<button class="header__button header__complete-task" type="button">Выполнить задачу по названию</button>
+				<button class="header__button header__delete-task" type="button">Удалить задачу по названию</button>
+			</div>
+		</header>
+		<main>
+			<section class="task">
+				<div class="task__load">
+					<div class="task__load-elem"></div>
+					<div class="task__load-elem"></div>
+				</div>
+			</section>
+		</main>
+		<div class="modal__wrapper">
+			<div class="modal">
+				<div class="modal__content"></div>
+				<button type="button" class="modal__close" title="Закрыть окно">
+					<img src="./icons/close.svg" alt="" />
+				</button>
+			</div>
+		</div>
+		<script type="module" src="js/script.js"></script>
+	</body>
+</html>
